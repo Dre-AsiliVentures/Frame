@@ -61,15 +61,20 @@ body {
     transform: skewX(-30deg);
 }
 
-/* Stripes confined to the center */
+/* Stripes */
 .stripes {
     position: absolute;
     left: 40%;
-    height: 50px;
-    border-right: 30px solid #00FFFF; /* Adding a dark edge for style */
+    top: 10px;
+    width: 25px;
+    height: 30px;
+     /* Gradient for depth */
     transform: skewX(-30deg);
-    z-index: 1; /* Ensures the stripes do not overlap the parallelograms */
+    border-right: 40px solid #00FFFF; 
+    z-index: 1; /* Ensures the stripes don't overlap the parallelograms */
+    border-radius: 10px; /* Adds a smooth edge for a modern look */
 }
+
 
 /* Main panel styling */
 .main-panel {
