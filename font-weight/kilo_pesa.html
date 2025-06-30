@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Metrics</title>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background-color: #1e1e1e;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+      color: white;
+    }
+
+    .metric {
+      width: 160px;
+      height: 160px;
+      background: #333;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 48px; /* consistent font size */
+      font-weight: 900;
+    }
+
+    .label {
+      font-size: 48px; /* matches percentage size */
+      font-weight: 600;
+      margin-top: 8px;
+      opacity: 0.8;
+    }
+
+    .cpu    { background-color: #4CAF50; }
+    .memory { background-color: #E53935; }
+    .traffic { background-color: #FB8C00; }
+    .db     { background-color: #FDD835; }
+  </style>
+</head>
+<body>
+  <div class="metric cpu">
+    37%
+    <div class="label">CPU</div>
+  </div>
+  <div class="metric memory">
+    98%
+    <div class="label">Memory</div>
+  </div>
+  <div class="metric traffic">
+    65%
+    <div class="label">Traffic</div>
+  </div>
+  <div class="metric db">
+    44%
+    <div class="label">Database</div>
+  </div>
+</body>
+</html>
