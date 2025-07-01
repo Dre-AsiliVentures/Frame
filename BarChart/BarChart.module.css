@@ -1,0 +1,58 @@
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 12px;
+  min-width: 60px;
+}
+
+.bar {
+  width: 76px;
+  height: 160px;
+  border-radius: 8px;
+  background: linear-gradient(to top, #23243a 70%, #3a3d5c 100%);
+  box-shadow: 0 2px 12px #0008, 0 0 0 2px #c74bff55;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  background: linear-gradient(
+    to top,
+    #c74bff 0%,
+    #7008d1 60%,
+    #c74bff 100% /*00ccff*/
+  );
+  box-shadow: 0 0 8px #c74bff99;
+  animation: grow 1.2s cubic-bezier(.4,1.5,.6,1);
+}
+
+.label-top {
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #2d1429;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  
+}
+
+.label-bottom {
+  margin-top: 7px;
+  font-size: 0.98rem;
+  color: #2d1429;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-shadow: 0 1px 0 #000a;
+}
+
+@keyframes grow {
+  from {
+    height: 0;
+  }
+}
